@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Montserrat:wght@400;500&display=swap');
+
+body{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button, ::placeholder,input{
+  font-family: 'Montserrat', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button{
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
+  padding: 3em;
+  background: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.inputs{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+input{
+  border-radius: 0.5em;
+  padding: 1em;
+  border: none;
+  width: 30em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-add{
+  border-radius: 0.5em;
+  background: #fff;
+  color: #000;
+  border: none;
+  margin-left: 1em;
+  padding: 0.5em 1em;
+}
+
+.todotask{
+  width: 40%;
+  margin: 1em auto;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Alkatra', cursive;
+}
+
+.btn-delete{
+  border-radius: 0 0.5em 0.5em 0;
+  background: #f50303;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  padding: 1em 2em;
+}
+
+.taskcontent{
+  width: 95%;
+  background: #000;
+  color: #fff;
+  padding: 1em;
+  border-radius: 0.5em 0  0 0.5em;
 }
